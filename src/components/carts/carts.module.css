@@ -1,0 +1,41 @@
+.content {
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0 auto;
+  width: min-content;
+  display: grid;
+  row-gap: 20px;
+}
+
+.carts { 
+  list-style-type: none;
+  margin: 0;   
+  padding: 0;
+  display: grid; 
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  padding: 0; 
+  font-size: 36px;  
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 10px;
+}
+
+.button{
+  background-color: #222222;
+  border-radius: 15px;
+  width: 100%;
+  color: #F0F0F0;  
+  font-size: 36px;  
+  line-height: 44px;
+  font-weight: 400;
+}

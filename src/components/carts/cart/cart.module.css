@@ -1,0 +1,15 @@
+.cart {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 400px max-content 300px;
+  column-gap: 10px;
+  font-size: 24px;  
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.text {
+  margin: 0;
+  padding: 0; 
+}

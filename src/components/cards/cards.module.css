@@ -1,0 +1,8 @@
+.cards {  
+  list-style-type: none;
+  margin: 100px 0 240px; 
+  padding: 0 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+}

@@ -4,7 +4,6 @@
 	color: #000000;  
   box-sizing: border-box;
   max-width: 1920px;
-  min-width: 320px;
-  height: 100%;  
+  min-width: 320px;  
   margin: auto;
 }
