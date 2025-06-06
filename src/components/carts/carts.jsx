@@ -21,8 +21,8 @@ export default function Carts({cartItems}) {
     <div className={styles.content}>
       <h2 className={styles.title }>Добавленные товары</h2>
       <ul className={styles.carts} >
-        {cartItems.map(cart => (
-          <Cart key={cart.id} cart={cart}/>          
+        {cartItems.map((cart, index) => (
+          <Cart key={index} cart={cart}/>          
         ))
         }
       </ul>

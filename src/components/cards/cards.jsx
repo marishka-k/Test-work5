@@ -11,7 +11,7 @@ export default function Cards ({cartItems, setCartItems}) {
   // Функция загрузки данных
   async function loadCards () {
     setLoading(true);
-    const res = await fetch(`http://o-complex.com:1337/products?page${page}`)
+    const res = await fetch(`http://o-complex.com:1337/products?page${page}&page_size=20`)
     const data = await res.json();
         
     if (data.items === 0) return; // Нет новых товаров
@@ -47,12 +47,12 @@ export default function Cards ({cartItems, setCartItems}) {
   return (
     <>
       <ul className={styles.cards}>
-        {cards.map(card => (
-          <Card key={card.id} card={card} cartItems={cartItems} setCartItems={setCartItems}/>
+        {cards.map((card, index) => (
+          <Card key={index} card={card} cartItems={cartItems} setCartItems={setCartItems}/>
         ))
         }
       </ul>
-      
+
       {loading && <p>Загрузка...</p>}
     </>
   );

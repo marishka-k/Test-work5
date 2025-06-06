@@ -6,8 +6,8 @@ export default function Reviews({reviewsArr}) {
   return (
     <ul className={styles.cards}>
       {reviewsArr.length > 0
-        ? reviewsArr.map(review => (
-          <Review key={review.id} review={review} />
+        ? reviewsArr.map((review, index) => (
+          <Review key={index} review={review} />
         )) 
         : <p>нет отзывов</p>
       }
