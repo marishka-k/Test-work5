@@ -34,7 +34,7 @@ export default function Cards ({cartItems, setCartItems}) {
   // Следим за скроллом
   useEffect(() => {
     const onScroll = () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2000 && !loading) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10 && !loading) {
         loadCards();
       }
     };
@@ -42,11 +42,7 @@ export default function Cards ({cartItems, setCartItems}) {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, [loading]);
-
-  useEffect(() => {
-    console.log('cards', cards);
-
-  }, [cards]);
+  
 
   return (
     <>
@@ -55,8 +51,8 @@ export default function Cards ({cartItems, setCartItems}) {
           <Card key={card.id} card={card} cartItems={cartItems} setCartItems={setCartItems}/>
         ))
         }
-      </ul>  
-
+      </ul>
+      
       {loading && <p>Загрузка...</p>}
     </>
   );

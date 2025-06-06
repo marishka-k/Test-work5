@@ -36,6 +36,7 @@ export default function Card({card, cartItems, setCartItems}) {
       <img className={styles.image} src={card.image_url} alt={`image${card.id}`} /> 
       <h2>{card.title}</h2>
       <p>{card.description}</p>
+      <p >{`Цена: ${card.price}₽`}</p>
 
       {cartItems.find(el => el.id === card.id)
         ? <div className={styles.button_full}>
