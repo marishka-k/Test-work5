@@ -8,7 +8,7 @@ function Modal({ open, setOpen }) {
   return (
     <>
       {open 
-        ? <div className={styles.overlay}>
+        ? <div className={styles.overlay} onClick={closeModal}>
             <div className={styles.content}>
               <button className={styles.close} onClick={closeModal}> &times; </button>
               <div className={styles.body}>
