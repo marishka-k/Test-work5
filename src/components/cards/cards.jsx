@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from './card/card';
 
 import styles from './cards.module.css'
+import Loader from '../loader/loader';
 
 export default function Cards ({cartItems, setCartItems}) {
   const [cards, setCards] = useState([]);
@@ -56,7 +57,7 @@ export default function Cards ({cartItems, setCartItems}) {
         }
       </ul>
 
-      {loading && <p>Загрузка...</p>}
+      {loading && <Loader/>}
     </>
   );
 };
