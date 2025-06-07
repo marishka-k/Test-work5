@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 400px max-content 300px;
+  grid-template-columns: 400px max-content 200px;
   column-gap: 10px;
-  font-size: 24px;  
-  line-height: 29px;
-  font-weight: 400;
+  
 }
 
 .text {
+  font-size: 24px;  
+  line-height: 29px;
+  font-weight: 400;
   margin: 0;
   padding: 0; 
 }

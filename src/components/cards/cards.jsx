@@ -5,18 +5,21 @@ import styles from './cards.module.css'
 
 export default function Cards ({cartItems, setCartItems}) {
   const [cards, setCards] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(2);
   const [loading, setLoading] = useState(false);
 
   // Функция загрузки данных
   async function loadCards () {
     setLoading(true);
-    const res = await fetch(`http://o-complex.com:1337/products?page${page}&page_size=20`)
+    const res = await fetch(`https://dummyjson.com/products?limit=20&skip=${(page - 1) * 20}`)
     const data = await res.json();
         
     if (data.items === 0) return; // Нет новых товаров
+
+    console.log('data', data);
     
-    const items = data.items
+    
+    const items = data.products
     
     cards.length === 0
       ? setCards(items)

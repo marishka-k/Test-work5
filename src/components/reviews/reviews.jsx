@@ -4,7 +4,7 @@ import styles from './reviews.module.css'
 export default function Reviews({reviewsArr}) {
 
   return (
-    <ul className={styles.cards}>
+    <ul className={styles.reviews}>
       {reviewsArr.length > 0
         ? reviewsArr.map((review, index) => (
           <Review key={index} review={review} />

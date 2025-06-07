@@ -1,4 +1,5 @@
-.cards {  
+.reviews {  
+  box-sizing: border-box;
   list-style-type: none;
   margin: 100px 0 240px;
   padding: 0 300px;

@@ -1,1 +1,1 @@
-export const URL = "http://o-complex.com:1337";
+export const URL = "https://dummyjson.com";

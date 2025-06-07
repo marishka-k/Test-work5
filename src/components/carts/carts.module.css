@@ -4,6 +4,7 @@
   padding: 10px;
   margin: 0 auto;
   width: min-content;
+  min-width: 650px;
   display: grid;
   row-gap: 20px;
 }
@@ -30,6 +31,7 @@
   gap: 10px;
 }
 
+
 .button{
   background-color: #222222;
   border-radius: 15px;
@@ -38,4 +40,26 @@
   font-size: 36px;  
   line-height: 44px;
   font-weight: 400;
+}
+
+.button:hover {
+  border: none;
+  background-color: #0d6129;
+}
+
+.button_disabled {
+  background-color: #d6d6d6;
+  pointer-events: none;
+}
+
+.error {
+  color: red;
+}
+
+.text {
+  font-size: 24px;  
+  line-height: 29px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0; 
 }

@@ -21,9 +21,8 @@ function App() {
 
   useEffect(() => {
     let _reviewsArr = []
-    if (reviews) { _reviewsArr = [...reviews.reviews] }
-    setReviewsArr(_reviewsArr )    
-   
+    if (reviews) { _reviewsArr = reviews.reviews.comments ? [...reviews.reviews.comments] : [] }
+    setReviewsArr(_reviewsArr )   
   }, [reviews]);
 
   return (
