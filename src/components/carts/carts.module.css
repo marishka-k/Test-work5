@@ -4,7 +4,7 @@
   border-radius: 15px;
   padding: 20px;
   margin: 0 auto;
-  width: min-content;
+  width: max-content;
   min-width: 600px;
   display: grid;
   row-gap: 20px;
