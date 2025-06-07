@@ -1,8 +1,32 @@
-.cards {  
+.cards {
   list-style-type: none;
-  margin: 100px 0 240px; 
-  padding: 0 300px;
+  margin: 100px 0 240px;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 34px;
+}
+
+@media all and (max-width: 1500px) {
+  .cards {
+    margin: 80px 0 150px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .cards {
+    margin: 50px 0 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .cards {
+    margin: 40px 0 50px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

@@ -1,50 +1,52 @@
 .content {
-  background-color: #D9D9D9;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   width: min-content;
-  min-width: 650px;
+  min-width: 600px;
   display: grid;
   row-gap: 20px;
 }
 
-.carts { 
+.carts {
   list-style-type: none;
-  margin: 0;   
+  margin: 0;
   padding: 0;
-  display: grid; 
+  display: grid;
   gap: 10px;
 }
 
 .title {
   margin: 0;
-  padding: 0; 
-  font-size: 36px;  
+  padding: 0;
+  font-size: 36px;
   line-height: 44px;
   font-weight: 400;
 }
 
-.buttons{
+.buttons {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 250px;
   gap: 10px;
 }
 
-
-.button{
+.button {
   background-color: #222222;
+  box-sizing: border-box;
   border-radius: 15px;
   width: 100%;
-  color: #F0F0F0;  
-  font-size: 36px;  
+  color: #f0f0f0;
+  font-size: 36px;
   line-height: 44px;
   font-weight: 400;
 }
 
 .button:hover {
   border: none;
-  background-color: #0d6129;
+  background-color: #000000;
 }
 
 .button_disabled {
@@ -57,9 +59,49 @@
 }
 
 .text {
-  font-size: 24px;  
+  font-size: 24px;
   line-height: 29px;
   font-weight: 400;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+}
+
+@media all and (max-width: 1100px) {
+  .content {
+    min-width: 350px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .button {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 0 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .content {
+    min-width: 0;
+    width: auto;
+  }
+
+  .button {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 10px;
+  }
 }
